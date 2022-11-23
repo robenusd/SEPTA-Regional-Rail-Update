@@ -1,1 +1,13 @@
 # SEPTA-Regional-Railroad-Update
+Instruction to run the project
+- Clone the project
+- Open the MySQL website on a browser
+- Select the Downloads option
+- Select MySQL Installer for Windows
+- Download and Install
+- In the installation process, set your MySQL root password
+- Go to index.js file and change the password
+- Uncomment the code to create the tables for the project when running the project for the first time and comment it back for the next times
+- Run npm install in your terminal
+- Run npm start
+- Open index.html in your browser
