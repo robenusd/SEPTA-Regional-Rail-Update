@@ -8,6 +8,7 @@ Instruction to run the project
 - In the installation process, set your MySQL root password
 - Go to index.js file and change the password
 - Uncomment the code to create the tables for the project when running the project for the first time and comment it back for the next times
-- Run npm install in your terminal
+- In your terminal, got to SEPTA-Regional-Railroad-Update directory
+- Run npm install
 - Run npm start
 - Open index.html in your browser
