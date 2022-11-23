@@ -18,8 +18,56 @@ const con = mysql.createConnection({
 con.connect(function(err) {
     if (err) throw err;
     console.log('Connected to database!')
-//     var sql = "CREATE TABLE media_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
-//     con.query(sql, function (err, result) {
+//     var table1 = "CREATE TABLE airport_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table1, function (err, result) {
+//     if (err) {
+//       console.error('error connecting: ' + err.stack);
+//       return;
+//     }  
+//     console.log("Table created");
+//   });
+//     var table2 = "CREATE TABLE chestnut_hill_east_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table2, function (err, result) {
+//     if (err) {
+//       console.error('error connecting: ' + err.stack);
+//       return;
+//     }  
+//     console.log("Table created");
+//   });
+//     var table3 = "CREATE TABLE chestnut_hill_west_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table3, function (err, result) {
+//     if (err) {
+//       console.error('error connecting: ' + err.stack);
+//       return;
+//     }  
+//     console.log("Table created");
+//   });
+//     var table4 = "CREATE TABLE eastwick_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table4, function (err, result) {
+//     if (err) {
+//       console.error('error connecting: ' + err.stack);
+//       return;
+//     }  
+//     console.log("Table created");
+//   });
+//     var table5 = "CREATE TABLE fox_chase_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table5, function (err, result) {
+//     if (err) {
+//       console.error('error connecting: ' + err.stack);
+//       return;
+//     }  
+//     console.log("Table created");
+//   });
+//     var table6 = "CREATE TABLE media_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table6, function (err, result) {
+//     if (err) {
+//       console.error('error connecting: ' + err.stack);
+//       return;
+//     }  
+//     console.log("Table created");
+//   });
+//     var table7 = "CREATE TABLE paoli_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )";
+//     con.query(table7, function (err, result) {
 //     if (err) {
 //       console.error('error connecting: ' + err.stack);
 //       return;
