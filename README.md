@@ -8,7 +8,6 @@ Instruction to run the project
 - In the installation process, set your MySQL root password
 - Create a database
 - Go to index.js file and change the password and database
-- Uncomment the code to create the tables for the project when running the project for the first time and comment it back for the next times
 - In your terminal, go to SEPTA-Regional-Rail-Update directory
 - Run npm install
 - Run npm start
