@@ -18,7 +18,7 @@ const con = mysql.createConnection({
 con.connect(function(err) {
     if (err) throw err;
     console.log('Connected to database!')
-    var tables = ['airport', 'chestnut_hill_east', 'chestnut_hill_west', 'eastwick', 'ff', 'fox_chase', 'media', 'paoli', 'gg']
+    var tables = ['airport', 'chestnut_hill_east', 'chestnut_hill_west', 'eastwick', 'fox_chase', 'media', 'paoli']
     tables.forEach((table) => {
         var sql = `CREATE TABLE if not exists ${table}_train (train VARCHAR(255), direction VARCHAR(255), time VARCHAR(255), station VARCHAR(255), minutes_late INT(3), last_update DATETIME )`;
         con.query(sql, function (err, result) {
