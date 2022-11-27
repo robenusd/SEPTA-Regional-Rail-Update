@@ -12,3 +12,4 @@ Instruction to run the project
 - Run npm install
 - Run npm start
 - Open index.html in your browser
+- Click on “Track Train Stations” 
