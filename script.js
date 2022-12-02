@@ -1,5 +1,5 @@
 var settings = {
-  "url": "https://corsanywhere.herokuapp.com/https://www3.septa.org/api/Arrivals/index.php?station="+$("#value")['0']['outerText'],
+  "url": "https://cors-anywhere.herokuapp.com/https://www3.septa.org/api/Arrivals/index.php?station="+$("#value")['0']['outerText'],
   "method": "GET",
   "timeout": 0,
   "crossDomain": true,
@@ -57,7 +57,7 @@ apicall().then(function(res) {
       if(d['Southbound']){
         d['Southbound'].forEach ( (t) => {
           var schedule = {
-            "url": "https://corsanywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
+            "url": "https://cors-anywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
             "method": "GET",
             "timeout": 0,
             "crossDomain": true,
@@ -82,7 +82,7 @@ apicall().then(function(res) {
       else if(d['Northbound']){
         d['Northbound'].forEach ( (t) => {
           var schedule = {
-            "url": "https://corsanywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
+            "url": "https://cors-anywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
             "method": "GET",
             "timeout": 0,
             "crossDomain": true,
@@ -107,7 +107,7 @@ apicall().then(function(res) {
       else if(d['Southbound'] && d['Northbound']){
         d['Southbound'].forEach ( (t) => {
           var schedule = {
-            "url": "https://corsanywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
+            "url": "https://cors-anywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
             "method": "GET",
             "timeout": 0,
             "crossDomain": true,
@@ -130,7 +130,7 @@ apicall().then(function(res) {
         }); 
         d['Northbound'].forEach ( (t) => {
           var schedule = {
-            "url": "https://corsanywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
+            "url": "https://cors-anywhere.herokuapp.com/https://www3.septa.org/api/RRSchedules/index.php?req1="+t['train_id'],
             "method": "GET",
             "timeout": 0,
             "crossDomain": true,
@@ -164,11 +164,11 @@ apicall().then(function(res) {
 })
 
 setTimeout(() => {
-  console.log("Delayed for 5 second.");
+  console.log("Delayed for 2 second.");
   // console.log(train_schedule);
   computation (train_schedule)
   getFromDatabase()
-}, 5000)
+}, 2000)
 
 
 function computation (train_schedule) {
