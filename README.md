@@ -11,4 +11,6 @@ Instruction to run the project
 - In your terminal, go to SEPTA-Regional-Rail-Update directory
 - Run npm install
 - Run npm start
+- Go to https://cors-anywhere.herokuapp.com/corsdemo to get temporary access
 - Open index.html in your browser
+- Click on “Track Train Stations” 
